@@ -1,0 +1,19 @@
+extends ../layout
+
+block content
+    h1 Edit Course
+    form(action="/courses/edit/"+course._id,method="post")
+        .form-group
+            label(for="name") Course Name
+            input#name(type="text", class="form-control", name="name", value=course.name)
+        .form-group
+            label(for="Id") Course ID
+            input#days(type="number", class="form-control", name="days", value=course.Id)
+        .form-group
+            label(for="duration") Course Duration
+            input#days(type="number", class="form-control", name="date" value=course.duration)
+        .form-group
+            label(for="fee") Course Fee
+            input#days(type="number", class="form-control", name="contact_number" value=course.fee)    
+        input(type="submit", class="btn btn-info")
+    

@@ -1,0 +1,18 @@
+extends ../layout
+
+block content
+    h1 Create New
+    form(action="/courses/add",method="post")
+        .form-group
+            label(for="name") Course Name
+            input#name(type="text", class="form-control", name="name")
+        .form-group
+            label(for="Id") Course Id
+            input#days(type="text", class="form-control", name="Id")
+        .form-group
+            label(for="duration") Course Duration
+            input#days(type="test", class="form-control", name="duration")
+        .form-group
+            label(for="") Course Fee
+            input#days(type="number", class="form-control", name="fee")
+        input(type="submit", class="btn btn-success")
